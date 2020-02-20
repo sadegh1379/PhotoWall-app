@@ -37,7 +37,7 @@ class App extends Component {
  onRemovePost = (removedPost) =>{
         
       this.setState((state)=>({
-          posts : state.posts.filter(post => post !== removedPost)
+          posts : state.posts.filter(post => post !== post)
       }))
     
   }

@@ -34,12 +34,13 @@ class App extends Component {
   }
 
 // Remove post
- onRemovePost = (removedPost) =>{
-        
+ onRemovePost = (post) =>{
+    let t =  confirm('آیا از حذف این عکس مطمعن هستید');
+    if(t){
       this.setState((state)=>({
-          posts : state.posts.filter(post => post !== removedPost)
+          posts : state.posts.filter(post => post !== post)
       }))
-    
+    }
   }
 
   render(){
@@ -48,7 +49,7 @@ class App extends Component {
         
                 <Title title="گالری عکس"/>
                 
-                <PhotoWall onRemovePost={this.onRemovePost} posts={this.state.posts}/>
+                <PhotoWall posts={this.state.posts}/>
                 
         
         </div>

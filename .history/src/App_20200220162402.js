@@ -32,27 +32,17 @@ class App extends Component {
       
     }
   }
-
-// Remove post
- onRemovePost = (removedPost) =>{
-        
-      this.setState((state)=>({
-          posts : state.posts.filter(post => post !== removedPost)
-      }))
-    
-  }
-
   render(){
-      return (
-        <div className="body">
-        
-                <Title title="گالری عکس"/>
-                
-                <PhotoWall onRemovePost={this.onRemovePost} posts={this.state.posts}/>
-                
-        
-        </div>
-      );
+  return (
+    <div className="body">
+     
+            <Title title="گالری عکس"/>
+            
+            <PhotoWall posts={posts}/>
+            
+     
+    </div>
+  );
 }
 }
 

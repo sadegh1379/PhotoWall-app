@@ -12,7 +12,7 @@ function Photo(props){
                     <h6 className="card-title">{post.description}</h6>
                         <div className="d-flex justify-content-center">
                                 <button  className="btn btn-outline-danger" 
-                                onClick={()=>onRemovePost(post)}
+                                onClick={}
                                 > remove</button>
                         </div>                       
                 </div>
@@ -22,7 +22,7 @@ function Photo(props){
 }
 
 Photo.propTypes = {
-    post : PropTypes.object.isRequired
+    post : PropTypes.string.isRequired
 }
 
 export default Photo

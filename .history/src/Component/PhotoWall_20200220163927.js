@@ -10,17 +10,14 @@ function PhotoWall(props){
             <div className="photo-grid container">{
                     posts && posts.length > 0 ? posts.map((post , index) => <Photo onRemovePost={onRemovePost} key={index}  post={post}/> )
                     :
-                    <div>
-                         <p className="display-4">Nothing yet <i class="fa fa-meh-o text-danger my-4" aria-hidden="true"></i></p>
-                        <p>For add picture please press <a href="/">Home</a></p>
-                    </div>
+                    <p>Nothing yet <i class="fa fa-meh-o" aria-hidden="true"></i></p>
                     }
              </div>
     )
 }
 
 PhotoWall.propTypes = {
-    posts : PropTypes.array.isRequired
+    posts : PropTypes.st.isRequired
 }
 
 export default PhotoWall;

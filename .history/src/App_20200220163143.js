@@ -34,10 +34,10 @@ class App extends Component {
   }
 
 // Remove post
- onRemovePost = (removedPost) =>{
+ onRemovePost = (post) =>{
         
       this.setState((state)=>({
-          posts : state.posts.filter(post => post !== removedPost)
+          posts : state.posts.filter(post => post !== post)
       }))
     
   }
@@ -48,7 +48,7 @@ class App extends Component {
         
                 <Title title="گالری عکس"/>
                 
-                <PhotoWall onRemovePost={this.onRemovePost} posts={this.state.posts}/>
+                <PhotoWall on posts={this.state.posts}/>
                 
         
         </div>

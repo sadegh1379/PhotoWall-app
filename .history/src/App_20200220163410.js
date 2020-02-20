@@ -34,10 +34,10 @@ class App extends Component {
   }
 
 // Remove post
- onRemovePost = (removedPost) =>{
+ onRemovePost = (rem) =>{
         
       this.setState((state)=>({
-          posts : state.posts.filter(post => post !== removedPost)
+          posts : state.posts.filter(post => post !== post)
       }))
     
   }
