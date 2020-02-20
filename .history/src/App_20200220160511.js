@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="body">
      
-            <Title title="گالری عکس"/>
+            <Ti.tle title="گالری عکس"/>
             
             <PhotoWall posts={posts}/>
             
