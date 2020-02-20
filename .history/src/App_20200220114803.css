@@ -1,0 +1,28 @@
+.p-title{
+    font-size: 30px;
+    color:white ;
+    font-weight: bolder;
+    font-family: 'Byekan';
+}
+
+.html{
+    font-family: 'Brekan';
+    background-color: #9E9E9E;
+}
+
+ .photo-grid{
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@font-face{
+    font-family: 'Byekan';
+    src:url('./Component/fonst/Yekan.ttf');
+}
+
+.photo-card{
+  margin: 0 10px;
+}

@@ -1,0 +1,22 @@
+.p-title{
+    font-size: 30px;
+    color:white ;
+    font-weight: bolder;
+    
+}
+
+.figure-grid{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.figure{
+    flex-grow: 1;
+    flex-basis: 60%;
+}
+.photo-component{
+    
+}

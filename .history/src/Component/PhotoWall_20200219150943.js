@@ -1,0 +1,20 @@
+import React, { Component } from 'react';
+import Photo from './Photo';
+
+export class PhotoWall extends Component {
+    
+   
+
+    render() {
+
+        const posts = this.props.posts;
+
+        return (
+            posts && posts.length > 0 ? posts.map((post , index) => <Photo key={index}  post={post}/> 
+            :
+            <p></p>
+        )
+    }
+}
+
+export default PhotoWall;
