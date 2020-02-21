@@ -1,5 +1,6 @@
 import React from 'react';
 import Photo from './Photo';
+import {Link} from 'r'
 import PropTypes from 'prop-types'
 
 

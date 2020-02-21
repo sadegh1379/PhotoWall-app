@@ -23,7 +23,7 @@ function Photo(props){
 
 Photo.propTypes = {
     post : PropTypes.object.isRequired,
-    onRemovePost : PropTypes.func.isRequired,
+    onRemovePost : p
 }
 
 export default Photo

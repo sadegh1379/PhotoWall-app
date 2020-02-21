@@ -36,12 +36,12 @@ class App extends Component {
         {
          id : "7" ,
          description : "علی میرزایی" ,
-         imageLink : "https://www.iata.org/contentassets/d7c512eb9a704ba2a8056e3186a31921/cargo_live_animals_parrot.jpg?w=330&h=200&mode=crop&scale=both&v=20191213012337"
+         imageLink : "https://dkt6rvnu67rqj.cloudfront.net/cdn/ff/tpWy09V5tfN_Il2UBj8nPU4FZvPDpNBQSecbyXiqbuM/1574345660/public/styles/322x405/public/media/int_files/1008357.jpg?itok=c5qoLzeh"
        }
        ,{
          id : "8" ,
          description :" سارا ممبینی" ,
-         imageLink :"https://images.unsplash.com/photo-1497752531616-c3afd9760a11?ixlib=rb-1.2.1&w=1000&q=80"
+         imageLink :
        
        }
         ]

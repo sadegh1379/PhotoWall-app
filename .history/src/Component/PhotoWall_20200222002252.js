@@ -8,8 +8,8 @@ function PhotoWall(props){
     const onRemovePost = props.onRemovePost;
     return(
         <div>
-                <div class="text-center">
-                    <a  className="btn btn-default add-icon"><i className="fa fa-plus fa-2x"></i></a>
+                <div>
+                    <a class="" className="btn btn-default"><i className="fa fa-plus"></i></a>
                 </div>
                 <div className="photo-grid container">{
                         posts && posts.length > 0 ? posts.map((post , index) => <Photo onRemovePost={onRemovePost} key={index}  post={post}/> )
