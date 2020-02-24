@@ -1,0 +1,51 @@
+.p-title{
+    font-size: 30px;
+    color:white ;
+    font-weight: bolder;
+    font-family: 'Byekan';
+}
+
+.body{
+    font-family: 'Brekan';
+    background-color: #E0E0E0;
+    padding-bottom: 100px;
+}
+
+ .photo-grid{
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@font-face{
+    font-family: 'Byekan';
+    src:url('./Component/fonst/Yekan.ttf');
+}
+
+.photo-card{
+  margin: 10px 10px;
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.add-icon{
+    text-align: center;
+    margin: 20px auto;
+    color:white  !important;
+    background-color: rgb(62, 112, 75);
+    padding: 20px;
+    border-radius: 70px;
+
+}
+
+.add-form input{
+ 
+    font-size: 18px;
+    color:black;
+}
+
+.form-card{
+    width: ;
+}
+
