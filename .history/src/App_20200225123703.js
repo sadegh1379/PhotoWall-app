@@ -28,10 +28,10 @@ class App extends Component {
                               </div>
                       )}/>
                         
-                        <Route exact path="/addphoto" render={(props)=>(
+                        {/* <Route exact path="/addphoto" render={(props)=>(
                           
                           <AddPhoto {...props} AddPostHandler={this.AddPostHandler}/>
-                        )}/>
+                        )}/> */}
                 </Switch>
             
         </div>

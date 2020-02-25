@@ -14,7 +14,7 @@ const store = createStore(rootReducer);
 ReactDOM.render(
 
 <Router>
-    <Provider store={store}>
+    <Provider store={}>
             <Main />
     </Provider>
 </Router>

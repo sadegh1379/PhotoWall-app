@@ -11,7 +11,7 @@ class App extends Component {
   constructor(){ 
       super()  
     }
-  
+  }
 
 
   render(){
@@ -24,7 +24,7 @@ class App extends Component {
                     
                       <Route exact path="/" render={()=>(
                               <div>
-                                  <PhotoWall posts={this.props.posts}/>
+                                  <PhotoWall onRemovePost={this.onRemovePost} posts={this.state.posts}/>
                               </div>
                       )}/>
                         

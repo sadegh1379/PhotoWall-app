@@ -11,13 +11,5 @@ const store = createStore(rootReducer);
 
 
 
-ReactDOM.render(
-
-<Router>
-    <Provider store={store}>
-            <Main />
-    </Provider>
-</Router>
-
-, document.getElementById('root'));
+ReactDOM.render(<Router><Main /></Router>, document.getElementById('root'));
 

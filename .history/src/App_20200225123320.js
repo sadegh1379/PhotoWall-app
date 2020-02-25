@@ -8,11 +8,33 @@ import './App.css';
 
 class App extends Component {
 
-  constructor(){ 
-      super()  
-    }
-  
+  constructor(){
+    
+      super()
 
+      
+      
+    }
+  }
+
+// Remove post
+ onRemovePost = (removedPost) =>{
+        
+      this.setState((state)=>({
+          posts : state.posts.filter(post => post !== removedPost)
+      }))
+    
+  }
+
+  // Add post
+  AddPostHandler = (post)=>{
+    let preState = this.state.posts;
+    let newState =preState.push( { id: preState.length +1 , description : post.description , imageLink : post.imageLink });
+
+    this.setState({
+        post : newState
+    })
+  }
 
   render(){
   
@@ -24,7 +46,7 @@ class App extends Component {
                     
                       <Route exact path="/" render={()=>(
                               <div>
-                                  <PhotoWall posts={this.props.posts}/>
+                                  <PhotoWall onRemovePost={this.onRemovePost} posts={this.state.posts}/>
                               </div>
                       )}/>
                         

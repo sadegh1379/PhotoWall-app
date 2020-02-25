@@ -24,13 +24,13 @@ class App extends Component {
                     
                       <Route exact path="/" render={()=>(
                               <div>
-                                  <PhotoWall posts={this.props.posts}/>
+                                  <PhotoWall onRemovePost={this.onRemovePost} posts={this.state.posts}/>
                               </div>
                       )}/>
                         
                         <Route exact path="/addphoto" render={(props)=>(
                           
-                          <AddPhoto {...props} AddPostHandler={this.AddPostHandler}/>
+                          <AddPhoto {...props} AddPostHandler={this
                         )}/>
                 </Switch>
             
